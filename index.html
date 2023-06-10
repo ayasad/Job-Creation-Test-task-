@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="index.css" rel="stylesheet" />
+    <title>Job Creation</title>
+  </head>
+  <body>
+    <form id="form">
+      <div class="group" style="margin-top: 3vh">
+        <div class="row">
+          <div class="contaner" style="height: 32vh">
+            <h4>Client details</h4>
+            <div class="row">
+              <input
+                id="firstName"
+                class="form__input"
+                style="margin-right: 4px"
+                type="text"
+                placeholder="First name"
+                required
+              />
+              <input
+                id="lastName"
+                class="form__input"
+                type="text"
+                placeholder="Last name"
+                required
+              />
+            </div>
+            <input
+              id="phone"
+              class="form__input"
+              type="text"
+              placeholder="Phone"
+              required
+            />
+            <input
+              id="email"
+              class="form__input"
+              type="text"
+              placeholder="Email (optional)"
+            />
+          </div>
+          <div class="contaner" style="height: 32vh">
+            <h4>Job details</h4>
+            <div class="row">
+              <select
+                id="jobType"
+                class="form__input"
+                style="margin-right: 4px"
+                required
+              >
+                <option value="" disabled selected>Job type</option>
+                <option value="Recall Job">Recall Job</option>
+                <option value="Dish washer repair">Dish washer repair</option>
+              </select>
+              <select
+                id="jobSource"
+                class="form__input"
+                style="margin-right: 4px"
+                required
+              >
+                <option value="" disabled selected>Job source</option>
+                <option value="GL Orlando">GL Orlando</option>
+                <option value="GL Penellas">GL Penellas</option>
+              </select>
+            </div>
+            <textarea
+              id="jobDescription"
+              class="form__input_textarea"
+              type="text"
+              placeholder="Job description (optional)"
+              style="height: 14vh"
+            ></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="contaner" style="height: 40vh">
+            <h4>Service location</h4>
+            <input
+              id="address"
+              class="form__input"
+              type="text"
+              placeholder="Address"
+              required
+            />
+            <input
+              id="city"
+              class="form__input"
+              type="text"
+              placeholder="City"
+              required
+            />
+            <input
+              id="state"
+              class="form__input"
+              type="text"
+              placeholder="State"
+              required
+            />
+            <div class="row">
+              <input
+                id="zipCode"
+                class="form__input"
+                style="margin-right: 4px"
+                type="text"
+                placeholder="Zip code"
+                required
+              />
+              <select
+                id="area"
+                class="form__input"
+                style="margin-right: 4px"
+                required
+              >
+                <option value="" disabled selected>Area</option>
+                <option value="Tampa">Tampa Bay</option>
+                <option value="Miami">Miami</option>
+                <option value="Orlando">Orlando</option>
+                <option value="Houston">Houston</option>
+                <option value="Charlotte">Charlotte</option>
+                <option value="Austin">Austin</option>
+              </select>
+            </div>
+          </div>
+          <div class="contaner" style="height: 40vh">
+            <h4>Scheduled</h4>
+            <input
+              id="date"
+              class="form__input"
+              type="text"
+              placeholder="Start date"
+              onfocus="(this.type='date')"
+              required
+            />
+            <div class="row">
+              <input
+                id="startTime"
+                class="form__input"
+                style="margin-right: 4px"
+                type="text"
+                placeholder="Start time"
+                onfocus="(this.type='time')"
+                required
+              />
+              <input
+                id="endTime"
+                class="form__input"
+                type="text"
+                placeholder="End time"
+                onfocus="(this.type='time')"
+                required
+              />
+            </div>
+            <select
+              id="testSelect"
+              class="form__input"
+              style="margin-right: 4px"
+              required
+            >
+              <option value="" disabled selected>Test select</option>
+              <option value="Timur Yussupov">Timur Yussupov</option>
+              <option value="Artem Amirdzanyan">Artem Amirdzanyan</option>
+            </select>
+          </div>
+        </div>
+        <div class="contaner__btn">
+          <button id="btn" class="form__btn" type="submit">Create Job</button>
+        </div>
+      </div>
+    </form>
+    <div class="ending hide">
+      Job is created!
+      <a id="link" href="https://nik-sandbox.pipedrive.com/deal/1">View Deal</a>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
